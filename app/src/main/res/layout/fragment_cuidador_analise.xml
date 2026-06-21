@@ -5,7 +5,7 @@
     android:background="@drawable/bg_screen_soft"
     android:clipToPadding="false"
     android:fillViewport="true"
-    android:paddingBottom="20dp">
+    android:paddingBottom="24dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,39 +15,54 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="132dp"
-            android:background="@drawable/bg_metric_blue"
-            android:elevation="6dp"
-            android:orientation="vertical"
-            android:padding="18dp">
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_profile_card"
+            android:elevation="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
-            <TextView
-                android:layout_width="match_parent"
+            <com.mesawa.cuidarproximocuidador.ui.perfil.CircleImageView
+                android:id="@+id/imageAnalisePerfil"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:background="@drawable/bg_avatar_circle"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_account_box" />
+
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Análise da conta"
-                android:textColor="#FFFFFF"
-                android:textSize="25sp"
-                android:textStyle="bold" />
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textAnaliseResumo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Seu mês está positivo: mais atendimentos, boas avaliações e perfil ativo."
-                android:textColor="#DDF4FF"
-                android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/textAnaliseNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kelly"
+                    android:textColor="#0F172A"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
-            <ProgressBar
-                android:id="@+id/progressMetaMensal"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:layout_marginTop="16dp"
-                android:max="100"
-                android:progress="72"
-                android:progressTint="#FFFFFF"
-                android:progressBackgroundTint="#6CB6E5" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Perfil profissional verificado"
+                    android:textColor="#0F9B6F"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Visão do mês, avaliações e oportunidades para melhorar seu atendimento."
+                    android:textColor="#64748B"
+                    android:textSize="13sp" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -58,10 +73,10 @@
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="108dp"
+                android:layout_height="96dp"
                 android:layout_weight="1"
                 android:background="@drawable/bg_profile_card"
-                android:elevation="4dp"
+                android:elevation="3dp"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="10dp">
@@ -73,7 +88,7 @@
                     android:gravity="center"
                     android:text="18"
                     android:textColor="#0F172A"
-                    android:textSize="26sp"
+                    android:textSize="27sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -82,16 +97,16 @@
                     android:gravity="center"
                     android:text="atendimentos"
                     android:textColor="#64748B"
-                    android:textSize="13sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="108dp"
-                android:layout_marginHorizontal="8dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/bg_profile_card"
-                android:elevation="4dp"
+                android:elevation="3dp"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="10dp">
@@ -112,15 +127,16 @@
                     android:gravity="center"
                     android:text="no mês"
                     android:textColor="#64748B"
-                    android:textSize="13sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="108dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/bg_profile_card"
-                android:elevation="4dp"
+                android:elevation="3dp"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="10dp">
@@ -132,7 +148,7 @@
                     android:gravity="center"
                     android:text="5.0"
                     android:textColor="#D99A00"
-                    android:textSize="26sp"
+                    android:textSize="27sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -141,7 +157,7 @@
                     android:gravity="center"
                     android:text="avaliação"
                     android:textColor="#64748B"
-                    android:textSize="13sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -149,76 +165,120 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            android:background="@drawable/bg_metric_green"
-            android:elevation="4dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_profile_card"
+            android:elevation="3dp"
+            android:orientation="vertical"
             android:padding="16dp">
 
             <TextView
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:background="@drawable/bg_icon_green"
-                android:gravity="center"
-                android:text="↗"
-                android:textColor="#0F9B6F"
-                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qualidade do perfil"
+                android:textColor="#0F172A"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <LinearLayout
-                android:layout_width="0dp"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:layout_marginTop="4dp"
+                android:text="Seu perfil está forte para receber propostas."
+                android:textColor="#64748B"
+                android:textSize="13sp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Desempenho em alta"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+            <ProgressBar
+                android:id="@+id/progressMetaMensal"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="14dp"
+                android:max="100"
+                android:progress="86"
+                android:progressBackgroundTint="#E2E8F0"
+                android:progressTint="#0EA5A4" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="+22% de solicitações aceitas comparado à semana anterior."
-                    android:textColor="#DFF8EF"
-                    android:textSize="13sp" />
-            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Foto, verificação facial, avaliações e disponibilidade ajudam famílias a confiar mais rápido."
+                android:textColor="#475569"
+                android:textSize="13sp" />
         </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
-            android:text="Comentários recentes"
+            android:text="Destaques recentes"
             android:textColor="#0F172A"
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/bg_profile_card"
+            android:background="@drawable/bg_status_good"
             android:elevation="3dp"
-            android:padding="16dp"
-            android:text="★ ★ ★ ★ ★\nAna Paula\nKelly foi muito carinhosa, pontual e passou segurança para toda família."
-            android:textColor="#334155"
-            android:textSize="14sp" />
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
-        <TextView
+            <TextView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_icon_green"
+                android:gravity="center"
+                android:text="✓"
+                android:textColor="#0F9B6F"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:text="Pontualidade e cuidado humanizado aparecem como seus pontos mais fortes."
+                android:textColor="#245B47"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/bg_profile_card"
             android:elevation="3dp"
-            android:padding="16dp"
-            android:text="★ ★ ★ ★ ★\nRoberto Lima\nProfissional tranquila, organizada e muito atenciosa com a rotina."
-            android:textColor="#334155"
-            android:textSize="14sp" />
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="★ ★ ★ ★ ★"
+                android:textColor="#D99A00"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ana Paula"
+                android:textColor="#0F172A"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Kelly foi muito carinhosa, pontual e passou segurança para toda família."
+                android:textColor="#475569"
+                android:textSize="14sp" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"

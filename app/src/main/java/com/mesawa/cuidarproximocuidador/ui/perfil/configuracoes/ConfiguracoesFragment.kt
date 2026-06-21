@@ -42,7 +42,7 @@ class ConfiguracoesFragment : Fragment() {
         val layout = campos("Nome público", "Telefone/WhatsApp", "Cidade")
         dialog("Editar dados da conta", layout) {
             val valores = valores(layout)
-            viewModel.salvarDadosConta(valores[0], valores[1], valores[2], ::aviso, ::aviso)
+            viewModel.salvarDadosConta(valores[0], valores[1], valores[2], ::sucessoEVoltar, ::aviso)
         }
     }
 
@@ -50,7 +50,7 @@ class ConfiguracoesFragment : Fragment() {
         val layout = campos("Senha atual", "Nova senha", "Confirmar nova senha")
         dialog("Trocar senha", layout) {
             val valores = valores(layout)
-            viewModel.alterarSenha(valores[1], valores[2], ::aviso, ::aviso)
+            viewModel.alterarSenha(valores[1], valores[2], ::sucessoEVoltar, ::aviso)
         }
     }
 
@@ -58,8 +58,13 @@ class ConfiguracoesFragment : Fragment() {
         val layout = campos("Endereço base", "Cidade", "Raio de atendimento em km")
         dialog("Endereço e regiões", layout) {
             val valores = valores(layout)
-            viewModel.salvarEndereco(valores[0], valores[1], valores[2], ::aviso, ::aviso)
+            viewModel.salvarEndereco(valores[0], valores[1], valores[2], ::sucessoEVoltar, ::aviso)
         }
+    }
+
+    private fun sucessoEVoltar(texto: String) {
+        aviso(texto)
+        requireActivity().finish()
     }
 
     private fun confirmar(titulo: String, mensagem: String, tipo: String) {

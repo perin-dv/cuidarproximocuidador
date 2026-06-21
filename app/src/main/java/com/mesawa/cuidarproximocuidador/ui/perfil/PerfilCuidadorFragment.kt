@@ -33,6 +33,7 @@ class PerfilCuidadorFragment : Fragment() {
     private lateinit var resumo: TextView
     private lateinit var status: TextView
     private var ultimaFotoUrl: String = ""
+    private var ultimoCuidadorId: String = ""
 
     private val escolherFoto = registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
         if (uri != null) {
@@ -106,9 +107,12 @@ class PerfilCuidadorFragment : Fragment() {
     private fun abrir(activityClass: Class<*>) {
         startActivity(
             Intent(requireContext(), activityClass)
-                .putExtra(HomeCuidadorActivity.EXTRA_ID, requireActivity().intent.getStringExtra(HomeCuidadorActivity.EXTRA_ID).orEmpty())
+                .putExtra(HomeCuidadorActivity.EXTRA_ID, ultimoCuidadorId.ifBlank {
+                    requireActivity().intent.getStringExtra(HomeCuidadorActivity.EXTRA_ID).orEmpty()
+                })
                 .putExtra(HomeCuidadorActivity.EXTRA_NOME, nome.text.toString())
                 .putExtra(HomeCuidadorActivity.EXTRA_ESPECIALIDADE, especialidade.text.toString())
+                .putExtra(HomeCuidadorActivity.EXTRA_FOTO_URL, ultimaFotoUrl)
         )
     }
 
@@ -128,6 +132,7 @@ class PerfilCuidadorFragment : Fragment() {
     }
 
     private fun aplicarDados(dados: PerfilCuidadorDados) {
+        ultimoCuidadorId = dados.id
         nome.text = dados.nome
         especialidade.text = listOf(dados.especialidade, dados.cidade)
             .filter { it.isNotBlank() }

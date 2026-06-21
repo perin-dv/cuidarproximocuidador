@@ -106,16 +106,19 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textAvaliacoesLista"
+                android:id="@+id/textAvaliacoesMensagem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/bg_profile_card"
-                android:elevation="3dp"
-                android:padding="18dp"
-                android:text="★ ★ ★ ★ ★\nAna Paula\nMuito carinhosa e pontual.\n\n★ ★ ★ ★ ★\nRoberto Lima\nProfissional tranquila e organizada.\n\n★ ★ ★ ★ ★\nMariana Costa\nPassou segurança durante todo o cuidado."
-                android:textColor="#334155"
+                android:text="Carregando avaliações..."
+                android:textColor="#64748B"
                 android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/containerAvaliacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

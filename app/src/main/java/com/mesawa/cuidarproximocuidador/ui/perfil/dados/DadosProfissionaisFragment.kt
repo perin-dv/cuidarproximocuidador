@@ -33,7 +33,10 @@ class DadosProfissionaisFragment : Fragment() {
             viewModel.salvar(
                 cuidadorId = requireActivity().intent.getStringExtra(HomeCuidadorActivity.EXTRA_ID).orEmpty(),
                 form = coletar(view),
-                onSuccess = { mensagem -> Toast.makeText(requireContext(), mensagem, Toast.LENGTH_LONG).show() },
+                onSuccess = { mensagem ->
+                    Toast.makeText(requireContext(), mensagem, Toast.LENGTH_LONG).show()
+                    requireActivity().finish()
+                },
                 onFailure = { mensagem -> Toast.makeText(requireContext(), mensagem, Toast.LENGTH_LONG).show() }
             )
         }
