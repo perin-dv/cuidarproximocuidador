@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F9FB"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/homeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/bottomNavCuidador"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="@drawable/bg_nav_top_line"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="8dp">
+
+        <LinearLayout
+            android:id="@+id/navInicio"
+            style="@style/NavCuidadorItem">
+
+            <ImageView
+                android:id="@+id/iconNavInicio"
+                style="@style/NavCuidadorIcon"
+                android:src="@drawable/ic_nav_home" />
+
+            <TextView
+                android:id="@+id/textNavInicio"
+                style="@style/NavCuidadorLabel"
+                android:text="Início" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navPropostas"
+            style="@style/NavCuidadorItem">
+
+            <ImageView
+                android:id="@+id/iconNavPropostas"
+                style="@style/NavCuidadorIcon"
+                android:src="@drawable/ic_nav_propostas" />
+
+            <TextView
+                android:id="@+id/textNavPropostas"
+                style="@style/NavCuidadorLabel"
+                android:text="Propostas" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navAgenda"
+            style="@style/NavCuidadorItem">
+
+            <ImageView
+                android:id="@+id/iconNavAgenda"
+                style="@style/NavCuidadorIcon"
+                android:src="@drawable/ic_nav_agenda" />
+
+            <TextView
+                android:id="@+id/textNavAgenda"
+                style="@style/NavCuidadorLabel"
+                android:text="Agenda" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navAnalise"
+            style="@style/NavCuidadorItem">
+
+            <ImageView
+                android:id="@+id/iconNavAnalise"
+                style="@style/NavCuidadorIcon"
+                android:src="@drawable/ic_nav_analise" />
+
+            <TextView
+                android:id="@+id/textNavAnalise"
+                style="@style/NavCuidadorLabel"
+                android:text="Análise" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navPerfil"
+            style="@style/NavCuidadorItem">
+
+            <ImageView
+                android:id="@+id/iconNavPerfil"
+                style="@style/NavCuidadorIcon"
+                android:src="@drawable/ic_nav_perfil" />
+
+            <TextView
+                android:id="@+id/textNavPerfil"
+                style="@style/NavCuidadorLabel"
+                android:text="Perfil" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

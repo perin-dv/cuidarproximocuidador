@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_soft"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <TextView
+        android:id="@+id/buttonVoltarSuporte"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="‹  Perfil"
+        android:textColor="#075FA8"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Suporte e SAC"
+        android:textColor="#0F172A"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cardEmailSac"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_profile_card"
+            android:elevation="3dp"
+            android:gravity="center"
+            android:text="SAC por email\nsuporte@cuidarproximo.app"
+            android:textColor="#334155"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cardTelefoneSac"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_profile_card"
+            android:elevation="3dp"
+            android:gravity="center"
+            android:text="Telefone\n0800 000 2026"
+            android:textColor="#334155"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cardSlaSac"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_status_good"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:text="Atendimento humano\nRetorno em até 1 dia útil para cadastro, conta, propostas e segurança."
+        android:textColor="#245B47"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_profile_card"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat IA"
+            android:textColor="#0F172A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textChatIa"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_screen_soft"
+            android:padding="14dp"
+            android:text="IA Cuidar Próximo: Olá! Posso ajudar com dúvidas básicas sobre perfil, foto, propostas, avaliações e conta."
+            android:textColor="#334155"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_login_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="12dp">
+
+            <EditText
+                android:id="@+id/editPerguntaIa"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Pergunte para a IA"
+                android:singleLine="true"
+                android:textColor="#111827"
+                android:textColorHint="#78909C" />
+
+            <Button
+                android:id="@+id/buttonEnviarIa"
+                android:layout_width="84dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_login_button_primary"
+                android:text="Enviar"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

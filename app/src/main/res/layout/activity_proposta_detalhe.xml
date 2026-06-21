@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F9FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Analisar proposta"
+            android:textColor="#0F2F3D"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_soft_panel"
+            android:elevation="5dp"
+            android:padding="18dp"
+            android:text="Idosa: Irene, 80 anos\nCondição: saudável, precisa de apoio preventivo\nEndereço: Rua das Flores, Maringá\nTempo: 4 horas\nValor: R$ 320,00\nDistância: 2,4 km\n\nTarefas:\n• Companhia e conversa\n• Banho assistido\n• Lembrete de medicação\n• Prevenção de quedas\n\nObservações da família:\nPrefere cuidadora paciente e calma. Possui leve dificuldade para caminhar."
+            android:textColor="#263A46"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonAceitarProposta"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_login_button_primary"
+            android:text="Aceitar proposta"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonRecusarProposta"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_login_toggle"
+            android:text="Voltar sem aceitar"
+            android:textAllCaps="false"
+            android:textColor="#075FA8"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

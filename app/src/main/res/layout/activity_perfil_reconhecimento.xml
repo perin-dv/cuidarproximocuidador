@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_soft"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:id="@+id/buttonVoltarReconhecimento"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="‹  Perfil"
+            android:textColor="#075FA8"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_status_good"
+            android:elevation="4dp"
+            android:padding="18dp"
+            android:text="Reconhecimento facial\nValidação de identidade para aumentar a segurança das famílias."
+            android:textColor="#08663F"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_profile_card"
+            android:elevation="3dp"
+            android:padding="18dp"
+            android:text="Etapas:\n1. Enviar foto do documento\n2. Tirar selfie ao vivo\n3. Comparar com a foto de perfil\n4. Marcar o perfil como verificado"
+            android:textColor="#334155"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/buttonIniciarReconhecimento"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_login_button_primary"
+            android:text="Começar verificação"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

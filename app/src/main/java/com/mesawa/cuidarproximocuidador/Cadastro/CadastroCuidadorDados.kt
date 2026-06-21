@@ -1,0 +1,28 @@
+package com.mesawa.cuidarproximocuidador.Cadastro
+
+data class CadastroCuidadorDados(
+    val nomeCompleto: String,
+    val cpf: String,
+    val nascimento: String,
+    val telefone: String,
+    val email: String,
+    val senha: String,
+    val fotoPerfilUri: String?,
+    val cidade: String,
+    val uf: String,
+    val raioKm: String,
+    val valorHora: String,
+    val disponibilidade: String,
+    val especialidade: String,
+    val curso: String,
+    val instituicao: String,
+    val experiencia: String,
+    val bio: String,
+    val experienciaMedicacao: Boolean,
+    val experienciaMobilidade: Boolean,
+    val experienciaAlzheimer: Boolean,
+    val antecedentes: String,
+    val referenciaNome: String,
+    val referenciaTelefone: String,
+    val autorizouVerificacao: Boolean
+)

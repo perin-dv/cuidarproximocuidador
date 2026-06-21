@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_soft"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:id="@+id/buttonVoltarConfiguracoes"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="‹  Perfil"
+            android:textColor="#075FA8"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Configurações"
+            android:textColor="#0F172A"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDadosFixosConta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_profile_card"
+            android:elevation="3dp"
+            android:padding="16dp"
+            android:text="CPF registrado: 000.000.000-00\nEmail: kelly.cuidadora.teste@cuidarproximo.com\nID do cuidador: kelly_cuidadora_teste\nEsses dados são usados para segurança e não podem ser alterados pelo app."
+            android:textColor="#334155"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Conta"
+            android:textColor="#0F172A"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rowEditarDadosConta"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_menu_row"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:text="Editar nome, telefone e cidade  >"
+            android:textColor="#334155"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rowTrocarSenha"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_menu_row"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:text="Trocar senha  >"
+            android:textColor="#334155"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rowEnderecoAtendimento"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_menu_row"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:text="Editar endereço e regiões  >"
+            android:textColor="#334155"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Preferências"
+            android:textColor="#0F172A"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkNotificacoes"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_menu_row"
+            android:checked="true"
+            android:paddingHorizontal="14dp"
+            android:text="Receber notificações de propostas"
+            android:textColor="#334155" />
+
+        <CheckBox
+            android:id="@+id/checkDisponivel"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_menu_row"
+            android:checked="true"
+            android:paddingHorizontal="14dp"
+            android:text="Perfil disponível para novas propostas"
+            android:textColor="#334155" />
+
+        <CheckBox
+            android:id="@+id/checkPrivacidade"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_menu_row"
+            android:checked="true"
+            android:paddingHorizontal="14dp"
+            android:text="Mostrar avaliação e comentários no perfil"
+            android:textColor="#334155" />
+
+        <TextView
+            android:id="@+id/rowPausarPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_status_warn"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:text="Pausar perfil temporariamente  >"
+            android:textColor="#7C4A03"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rowExcluirConta"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_menu_row"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:text="Excluir conta  >"
+            android:textColor="#D92D4B"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

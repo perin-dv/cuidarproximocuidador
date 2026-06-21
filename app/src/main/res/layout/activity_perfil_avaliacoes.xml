@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_soft"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="252dp"
+            android:background="@drawable/bg_review_photo">
+
+            <TextView
+                android:id="@+id/buttonVoltarAvaliacoes"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:text="‹  Perfil"
+                android:textColor="#075FA8"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.mesawa.cuidarproximocuidador.ui.perfil.CircleImageView
+                android:id="@+id/imageAvaliacaoPerfil"
+                android:layout_width="126dp"
+                android:layout_height="126dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_avatar_circle"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_account_box" />
+
+            <TextView
+                android:id="@+id/textAvaliacoesTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="5.0 estrelas"
+                android:textColor="#0F172A"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="@drawable/bg_profile_card"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="18\natendimentos"
+                    android:textColor="#0F172A"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="100%\nrecomendada"
+                    android:textColor="#0F9B6F"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="3\ncomentários"
+                    android:textColor="#D99A00"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textAvaliacoesResumo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Comentários recebidos"
+                android:textColor="#0F172A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textAvaliacoesLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_profile_card"
+                android:elevation="3dp"
+                android:padding="18dp"
+                android:text="★ ★ ★ ★ ★\nAna Paula\nMuito carinhosa e pontual.\n\n★ ★ ★ ★ ★\nRoberto Lima\nProfissional tranquila e organizada.\n\n★ ★ ★ ★ ★\nMariana Costa\nPassou segurança durante todo o cuidado."
+                android:textColor="#334155"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
