@@ -103,11 +103,26 @@ class InicioCuidadorFragment : Fragment() {
                 bannerHandler.postDelayed(bannerRunnable, BANNER_DELAY_MS)
             }
         }
-        mostrarBanner(0)
+        bannerCarousel?.post {
+            ajustarLarguraBanners()
+            mostrarBanner(0)
+        }
+    }
+
+    private fun ajustarLarguraBanners() {
+        val largura = bannerCarousel?.width ?: return
+        val track = bannerTrack ?: return
+        if (largura <= 0) return
+        for (i in 0 until track.childCount) {
+            val banner = track.getChildAt(i)
+            banner.layoutParams = banner.layoutParams.apply { width = largura }
+        }
+        track.requestLayout()
     }
 
     private fun mostrarBanner(index: Int) {
         bannerIndex = index
+        ajustarLarguraBanners()
         val target = bannerTrack?.getChildAt(index)?.left ?: 0
         bannerCarousel?.smoothScrollTo(target, 0)
         bannerDots.forEachIndexed { dotIndex, dot ->
