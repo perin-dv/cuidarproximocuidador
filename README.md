@@ -80,25 +80,13 @@ No Windows:
 
 ### Configuracao Firebase
 
-1. Crie um projeto no Firebase Console.
-2. Cadastre um app Android com o package name `com.mesawa.cuidarproximocuidador`.
-3. Baixe o `google-services.json`.
-4. Coloque o arquivo em `app/google-services.json`.
-5. Ative Auth, Firestore e Storage.
+O app usa Firebase e espera o arquivo local `app/google-services.json`, que nao fica versionado por seguranca. O package name do aplicativo e `com.mesawa.cuidarproximocuidador`.
 
-## Seguranca
+## Configuracao local
 
-Nao versionar:
+Este repositorio nao versiona arquivos gerados, logs locais ou credenciais de ambiente. Para executar em uma nova maquina, e necessario configurar um projeto Firebase proprio com Auth, Firestore e Storage.
 
-- `app/google-services.json`
-- `.idea/`
-- `.gradle/`
-- logs de build/Firebase
-- arquivos locais de ambiente
-
-Se credenciais reais ja foram publicadas, rotacione as chaves no Firebase.
-
-## Aprendizados demonstrados
+## Aprendizados
 
 - Criacao de um app Android voltado para uma persona especifica.
 - Organizacao de telas por dominio: login, cadastro, perfil, propostas e ganhos.
@@ -107,15 +95,10 @@ Se credenciais reais ja foram publicadas, rotacione as chaves no Firebase.
 - Uso de cache local para melhorar experiencia e reduzir dependencia de rede.
 - Fluxos profissionais como avaliacoes, configuracoes, suporte e propostas.
 
-## Roadmap
+## Evolucao do projeto
 
-- Adicionar screenshots e GIF do fluxo principal.
-- Documentar colecoes Firestore usadas pelo app do cuidador.
-- Criar testes para ViewModels e repositories.
-- Configurar CI com GitHub Actions.
-- Padronizar nomes de pacotes em lowercase por convencao Kotlin/Java.
+O projeto segue em evolucao enquanto aprofundo meus estudos em Android, Firebase, organizacao de codigo, testes e arquitetura de aplicativos mobile.
 
 ## Autor
 
 Desenvolvido por [Perin](https://github.com/perin-dv) como projeto de portfolio para Desenvolvimento Android Junior e Engenharia de Software.
-
