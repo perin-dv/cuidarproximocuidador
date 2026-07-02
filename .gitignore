@@ -14,3 +14,10 @@
 .externalNativeBuild
 .cxx
 local.properties
+app/google-services.json
+firebase-debug.log
+functions/firebase-debug.log
+node_modules/
+functions/node_modules/
+.agents/
+skills-lock.json
